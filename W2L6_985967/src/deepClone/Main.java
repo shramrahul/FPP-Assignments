@@ -19,3 +19,18 @@ public class Main {
     }
 
 }
+
+/*output
+
+Before copying person1, person1: 
+Person [name=person1, computer=shallowClone.Computer{manufacturer='Dell', processor='i7', ramSize=16, diskSize=2, processorSpeed=3122.77}]
+After copying person1, person2: 
+Person [name=person1, computer=shallowClone.Computer{manufacturer='Dell', processor='i7', ramSize=16, diskSize=2, processorSpeed=3122.77}]
+
+Edited value of computer in person1
+new values of person1: 
+Person [name=person1, computer=shallowClone.Computer{manufacturer='HP', processor='i7', ramSize=16, diskSize=2, processorSpeed=3122.77}]
+Changed value due to shallow copy in person2: 
+Person [name=person1, computer=shallowClone.Computer{manufacturer='Dell', processor='i7', ramSize=16, diskSize=2, processorSpeed=3122.77}]
+
+*/
